@@ -1,0 +1,7 @@
+for haml_file in `find haml -name '*.haml'`
+do
+  output="${haml_file:5}"
+  output="${output%aml}tml"
+  `haml $haml_file $output`
+  echo built $haml_file -\> $output
+done
