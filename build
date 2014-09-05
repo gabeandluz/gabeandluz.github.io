@@ -5,3 +5,11 @@ do
   `haml $haml_file $output`
   echo built $haml_file -\> $output
 done
+
+for sass_file in `find sass -name '*.sass'`
+do
+  output="${sass_file:5}"
+  output="${output%sass}css"
+  `sass $sass_file $output`
+  echo built $sass_file -\> $output
+done
