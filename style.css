@@ -43,7 +43,8 @@ html, body {
   .footer img {
     display: block;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 10px; }
+  .footer img.light {
     opacity: 0.5;
     filter: alpha(opacity=50); }
 
@@ -65,9 +66,6 @@ html, body {
   .next:hover {
     opacity: 0.4;
     filter: alpha(opacity=4); }
-  .next img {
-    opacity: 100;
-    filter: alpha(opacity=1); }
 
 .slide {
   height: 100%;
