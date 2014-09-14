@@ -1,3 +1,5 @@
+$dusty-shale: rgb(145, 175, 174)
+
 html, body
   font-family: 'Lato', sans-serif
   margin: 0
@@ -33,17 +35,19 @@ html, body
         font-weight: 400
         text-shadow: #000 0 0 0
 
+$footer-height: 59px
 .footer
   z-index: 100
   position: fixed
   bottom: 0
   width: 100%
-  height: 70px
+  height: $footer-height
   margin: 0
   img
     display: block
     margin: 0 auto
-    margin-top: 10px
+    // 31px, height of down-lt.png
+    margin-top: ($footer-height - 31px) / 2
   img.light
     opacity: 0.5
     filter: alpha(opacity=50)
@@ -53,7 +57,7 @@ html, body
   position: fixed
   bottom: 0
   width: 100%
-  height: 70px
+  height: $footer-height
   margin: 0
   background-color: #FFFFFF
   cursor: pointer
@@ -83,3 +87,8 @@ html, body
   font-size: 60px
   display: inline-block
   vertical-align: middle
+
+.home
+  background-color: $dusty-shale
+  .logo
+    max-height: 100%
