@@ -86,7 +86,9 @@ html, body {
 
 .home {
   background-color: #91afae; }
-  .home .logo {
-    max-height: 100%; }
+  .home .logo img {
+    max-width: 100%; }
+  .home .date img {
+    max-width: 60%; }
 
 /*# sourceMappingURL=style.css.map */
