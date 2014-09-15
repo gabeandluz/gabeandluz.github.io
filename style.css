@@ -80,15 +80,16 @@ html, body {
     vertical-align: middle; }
 
 .content-box {
-  font-size: 60px;
   display: inline-block;
   vertical-align: middle; }
 
 .home {
   background-color: #91afae; }
   .home .logo img {
-    max-width: 100%; }
+    max-width: 100%;
+    max-height: 68%; }
   .home .date img {
-    max-width: 60%; }
+    max-width: 60%;
+    max-height: 27.5%; }
 
 /*# sourceMappingURL=style.css.map */
