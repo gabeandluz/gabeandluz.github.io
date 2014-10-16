@@ -8,12 +8,12 @@
   %body
     .header
       %ul.nav
-        %li.home-nav HOME
-        %li.event-nav EVENT INFO
-        %li.day-nav DAY OF
-        %li.rsvp-nav RSVP
-        %li.story-nav OUR STORY
-        %li.party-nav WEDDING PARTY
+        %li{'data-scrollto' => '.home'} HOME
+        %li{'data-scrollto' => '.event-info'} EVENT INFO
+        %li DAY OF
+        %li RSVP
+        %li OUR STORY
+        %li WEDDING PARTY
     .footer
       %img.light{src: 'img/down-lt.png'}
       .next
@@ -82,5 +82,6 @@
             %a.sq-button.info-button.js-open-event-info-modal{href:'javascript:'} MORE EVENT INFO
             %a.sq-button.maps-button{href:'https://goo.gl/maps/kZmde', target:'_blank'} GOOGLE MAPS
 
-    %script{src:"http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"}
+    %script{src:"js/jquery.min.js"}
+    %script{src:"js/underscore-min.js"}
     %script{src:"js/gabeandluz.js"}
