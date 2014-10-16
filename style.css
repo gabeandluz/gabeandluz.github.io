@@ -11,6 +11,9 @@ html, body {
   html .lato-light, body .lato-light {
     font-weight: 300; }
 
+p {
+  margin: 0; }
+
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -95,10 +98,9 @@ hr {
     display: inline-block;
     height: 100%;
     vertical-align: middle; }
-
-.content-box {
-  display: inline-block;
-  vertical-align: middle; }
+  .slide .content-box {
+    display: inline-block;
+    vertical-align: middle; }
 
 .home {
   background-color: #91afae; }
@@ -148,5 +150,26 @@ hr {
         float: left; }
       .event-info .content-box .sq-button.info-button {
         float: right; }
+
+.event-info-modal {
+  z-index: 1000;
+  width: 720px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 10%;
+  background-color: #f9f6f2;
+  padding: 12px; }
+  .event-info-modal .content-box {
+    padding: 40px;
+    border: 1px #cfcfd3 solid; }
+    .event-info-modal .content-box hr {
+      margin: 20px 0px; }
+    .event-info-modal .content-box a {
+      text-decoration: none;
+      font-weight: 400;
+      color: #c8c8cc; }
+    .event-info-modal .content-box strong {
+      font-weight: 400; }
 
 /*# sourceMappingURL=style.css.map */

@@ -15,7 +15,8 @@ html, body
   .lato-light
     font-weight: 300
 
-
+p
+  margin: 0
 hr
   -moz-box-sizing: content-box
   box-sizing:      content-box
@@ -101,10 +102,9 @@ $footer-height: 59px
   padding: 0
   text-align: center
   font-size: 0px
-
-.content-box
-  display: inline-block
-  vertical-align: middle
+  .content-box
+    display: inline-block
+    vertical-align: middle
 
 .home
   background-color: $dusty-shale
@@ -154,3 +154,24 @@ $footer-height: 59px
         float: left
       &.info-button
         float: right
+
+.event-info-modal
+  z-index: 1000
+  width: 720px
+  position: fixed
+  left: 50%
+  transform: translate(-50%, 0)
+  top: 10%
+  background-color: #f9f6f2
+  padding: 12px
+  .content-box
+    padding: 40px
+    border: 1px #cfcfd3 solid
+    hr
+      margin: 20px 0px
+    a
+      text-decoration: none
+      font-weight: 400
+      color: #c8c8cc
+    strong
+      font-weight: 400
