@@ -8,7 +8,7 @@
   });
 
   var scrollTo = function ($el) {
-    var haltScroll = 'scroll DOMMouseScroll mousewheel';
+    var haltScroll = 'mousedown scroll DOMMouseScroll mousewheel';
     $('body').bind(haltScroll, function(){ $('body').stop(); });
     $('body').animate({scrollTop: $el.offset().top}, 800,
       function (){ $('body').unbind(haltScroll); }
