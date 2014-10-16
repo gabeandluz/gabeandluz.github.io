@@ -55,7 +55,7 @@ html, body {
   width: 100%;
   height: 59px;
   margin: 0;
-  background-color: #FFFFFF;
+  background-color: white;
   cursor: pointer;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -91,5 +91,42 @@ html, body {
   .home .date img {
     max-width: 60%;
     max-height: 27.5%; }
+
+.event-info {
+  background-color: #aeaeb5; }
+  .event-info .content-box {
+    width: 1000px;
+    color: white; }
+    .event-info .content-box .map {
+      float: left;
+      padding-right: 20px;
+      width: 480px; }
+    .event-info .content-box .details {
+      float: right;
+      padding-left: 20px;
+      width: 480px;
+      text-align: left; }
+      .event-info .content-box .details .title {
+        font-size: 80px; }
+      .event-info .content-box .details .place, .event-info .content-box .details .time {
+        font-size: 20px;
+        padding-bottom: 5px; }
+    .event-info .content-box .sq-button {
+      font-size: 18px;
+      width: 230px;
+      text-align: center;
+      color: black;
+      filter: alpha(opacity=40);
+      opacity: 0.4;
+      text-decoration: none;
+      cursor: pointer;
+      background-color: white;
+      padding: 20px 0; }
+      .event-info .content-box .sq-button:hover {
+        color: #bebebe; }
+      .event-info .content-box .sq-button.maps-button {
+        float: left; }
+      .event-info .content-box .sq-button.info-button {
+        float: right; }
 
 /*# sourceMappingURL=style.css.map */

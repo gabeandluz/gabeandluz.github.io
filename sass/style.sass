@@ -1,4 +1,5 @@
 $dusty-shale: rgb(145, 175, 174)
+$soft-grey: rgb(174, 174, 181)
 
 html, body
   font-family: 'Lato', sans-serif
@@ -58,7 +59,7 @@ $footer-height: 59px
   width: 100%
   height: $footer-height
   margin: 0
-  background-color: #FFFFFF
+  background-color: white
   cursor: pointer
   opacity: 0
   filter: alpha(opacity=0)
@@ -94,3 +95,40 @@ $footer-height: 59px
   .date img
     max-width: 60%
     max-height: 27.5%
+
+.event-info
+  background-color: $soft-grey
+  .content-box
+    width: 1000px
+    color: white
+    .map
+      float: left
+      padding-right: 20px
+      width: 480px
+    .details
+      float: right
+      padding-left: 20px
+      width: 480px
+      text-align: left
+      .title
+        font-size: 80px
+      .place, .time
+        font-size: 20px
+        padding-bottom: 5px
+    .sq-button
+      font-size: 18px
+      width: 230px
+      text-align: center
+      color: black
+      filter: alpha(opacity=40)
+      opacity: 0.4
+      text-decoration: none
+      cursor: pointer
+      background-color: white
+      padding: 20px 0
+      &:hover
+        color: #bebebe
+      &.maps-button
+        float: left
+      &.info-button
+        float: right
