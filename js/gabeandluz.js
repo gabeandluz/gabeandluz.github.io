@@ -3,7 +3,7 @@
     $('.event-info-modal').fadeIn('fast');
     return false;
   });
-  $('.modal-background').click(function (e) {
+  $('.modal-background, .modal-close-button').click(function (e) {
     $('.event-info-modal').fadeOut('fast');
   });
 })(jQuery);
