@@ -150,9 +150,9 @@ hr {
       .event-info .content-box .sq-button:hover {
         color: #bebebe; }
       .event-info .content-box .sq-button.maps-button {
-        float: left; }
-      .event-info .content-box .sq-button.info-button {
         float: right; }
+      .event-info .content-box .sq-button.info-button {
+        float: left; }
 
 .modal-background {
   background-color: black;
