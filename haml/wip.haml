@@ -26,7 +26,8 @@
         .date
           %img{src: 'img/date-banner.svg'}
 
-    .event-info-modal
+    .modal-background.event-info-modal.none
+    .modal.event-info-modal.none
       .content-box.lato-light
         Cupcake ipsum dolor sit amet.
         %strong Dessert fruitcake jelly I love jelly-o.
@@ -54,6 +55,7 @@
         snaps muffin. Fruitcake candy canes unerdwear.com brownie halvah. Lollipop toffee jujubes jelly
         beans unerdwear.com lollipop topping cookie pastry. Tart chocolate bar powder. Sesame snaps dragee
         icing carrot cake muffin cookie gummi bears.
+
     .slide.event-info
       .content-box
         .map
@@ -76,4 +78,7 @@
           %hr.size-3{style: 'margin-bottom: 28px;'}
           .buttons
             .sq-button.maps-button GOOGLE MAPS
-            .sq-button.info-button MORE EVENT INFO
+            .sq-button.info-button.js-open-event-info-modal MORE EVENT INFO
+
+    %script{src:"http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"}
+    %script{src:"js/gabeandluz.js"}

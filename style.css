@@ -4,6 +4,8 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%; }
+  html .none, body .none {
+    display: none; }
   html .lato-bold, body .lato-bold {
     font-weight: 700; }
   html .lato-regular, body .lato-regular {
@@ -126,7 +128,8 @@ hr {
       width: 480px;
       text-align: left; }
       .event-info .content-box .details .title {
-        font-size: 80px; }
+        font-size: 80px;
+        padding-bottom: 10px; }
       .event-info .content-box .details .place, .event-info .content-box .details .time {
         font-size: 20px;
         padding-bottom: 5px; }
@@ -151,7 +154,18 @@ hr {
       .event-info .content-box .sq-button.info-button {
         float: right; }
 
-.event-info-modal {
+.modal-background {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  filter: alpha(opacity=40);
+  opacity: 0.4; }
+
+.modal {
   z-index: 1000;
   width: 720px;
   position: fixed;
@@ -160,16 +174,16 @@ hr {
   top: 10%;
   background-color: #f9f6f2;
   padding: 12px; }
-  .event-info-modal .content-box {
+  .modal .content-box {
     padding: 40px;
     border: 1px #cfcfd3 solid; }
-    .event-info-modal .content-box hr {
+    .modal .content-box hr {
       margin: 20px 0px; }
-    .event-info-modal .content-box a {
+    .modal .content-box a {
       text-decoration: none;
       font-weight: 400;
       color: #c8c8cc; }
-    .event-info-modal .content-box strong {
+    .modal .content-box strong {
       font-weight: 400; }
 
 /*# sourceMappingURL=style.css.map */
