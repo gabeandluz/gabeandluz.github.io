@@ -1,8 +1,15 @@
 html, body {
   font-family: "Lato", sans-serif;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   height: 100%; }
+  html .lato-bold, body .lato-bold {
+    font-weight: 700; }
+  html .lato-regular, body .lato-regular {
+    font-weight: 400; }
+  html .lato-light, body .lato-light {
+    font-weight: 300; }
 
 .header {
   position: fixed;
@@ -29,9 +36,7 @@ html, body {
       font-size: 16px;
       cursor: pointer; }
       .header ul.nav li:hover {
-        color: #bebebe;
-        font-weight: 400;
-        text-shadow: #000 0 0 0; }
+        color: #bebebe; }
 
 .footer {
   z-index: 100;
@@ -96,7 +101,7 @@ html, body {
   background-color: #aeaeb5; }
   .event-info .content-box {
     width: 1000px;
-    color: white; }
+    color: #f9f6f2; }
     .event-info .content-box .map {
       float: left;
       padding-right: 20px;
@@ -111,6 +116,9 @@ html, body {
       .event-info .content-box .details .place, .event-info .content-box .details .time {
         font-size: 20px;
         padding-bottom: 5px; }
+        .event-info .content-box .details .place .lato-light, .event-info .content-box .details .time .lato-light {
+          font-size: 16px;
+          color: #e5e2df; }
     .event-info .content-box .sq-button {
       font-size: 18px;
       width: 230px;

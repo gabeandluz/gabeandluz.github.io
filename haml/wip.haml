@@ -2,7 +2,7 @@
 %html
   %head
     %title Gabe & Luz
-    %link{href: 'http://fonts.googleapis.com/css?family=Lato', rel:'stylesheet', type:'text/css'}
+    %link{href:'http://fonts.googleapis.com/css?family=Lato:300,400,700', rel:'stylesheet', type:'text/css'}
     %link{href:'style.css', rel:'stylesheet', type:'text/css'}
 
   %body
@@ -31,14 +31,16 @@
         .map
           %img{src: 'img/map.png'}
         .details
-          .title EVENT INFO
+          .title.lato-bold EVENT INFO
           .place
-            PLACE: Camp Hoffman<br>
-            2850 Ministerial Rd<br>
-            South Kingston, RI 02879
+            PLACE: Camp Hoffman
+            .lato-light
+              2850 Ministerial Rd<br>
+              South Kingston, RI 02879
           .time
-            TIME: 5PM Ceremony<br>
-            Dinner & Dancing to Follow
+            TIME: 5PM Ceremony
+            .lato-light
+              Dinner & Dancing to Follow
           .buttons
             .sq-button.maps-button GOOGLE MAPS
             .sq-button.info-button MORE EVENT INFO
