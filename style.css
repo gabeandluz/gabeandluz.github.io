@@ -116,19 +116,18 @@ hr {
 .event-info {
   background-color: #aeaeb5; }
   .event-info .content-box {
-    width: 1000px;
     color: #f9f6f2; }
     .event-info .content-box .map {
       float: left;
-      padding-right: 20px;
-      width: 480px; }
+      width: 48%; }
+      .event-info .content-box .map img {
+        max-width: 100%; }
     .event-info .content-box .details {
       float: right;
-      padding-left: 20px;
-      width: 480px;
+      width: 48%;
       text-align: left; }
       .event-info .content-box .details .title {
-        font-size: 80px;
+        font-size: 60px;
         padding-bottom: 10px; }
       .event-info .content-box .details .place, .event-info .content-box .details .time {
         font-size: 20px;
@@ -138,7 +137,7 @@ hr {
           color: #e5e2df; }
     .event-info .content-box .sq-button {
       font-size: 16px;
-      width: 230px;
+      width: 49%;
       text-align: center;
       color: black;
       filter: alpha(opacity=40);
