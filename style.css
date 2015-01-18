@@ -134,7 +134,8 @@ hr {
       text-align: left; }
       .event-info .content-box .details .title {
         font-size: 60px;
-        padding-bottom: 10px; }
+        padding-bottom: 10px;
+        white-space: nowrap; }
       .event-info .content-box .details .place, .event-info .content-box .details .time {
         font-size: 20px;
         padding-bottom: 5px; }
