@@ -3,7 +3,7 @@
   %head
     %title Gabe & Luz
     %link{href:'img/favicon.png', rel:'shortcut icon', type:'image/x-icon'}
-    %link{href: 'http://fonts.googleapis.com/css?family=Lato', rel:'stylesheet', type:'text/css'}
+    %link{href:'http://fonts.googleapis.com/css?family=Lato:300,400,700', rel:'stylesheet', type:'text/css'}
     %link{href:'style.css', rel:'stylesheet', type:'text/css'}
 
   %body
@@ -13,3 +13,72 @@
           %img{src: 'img/home-logo-pad.svg'}
         .date
           %img{src: 'img/date-banner.svg'}
+
+    .modal-background.event-info-modal.none
+    .modal.event-info-modal.none
+      %a.modal-close-button{href: 'javascript:'}
+        %img{src: 'img/modal-close.svg'}
+      .content-box.lato-light
+        Our wedding will take place at Camp Hoffman in South Kingstown, Rhode
+        Island. It's a gorgeous girl scout camp about an hour outside
+        Providence. We'll kick things off with our ceremony under a charming old
+        maple tree. Afterwards we'll party it up in their rustic dining hall.
+        %br
+        %br
+        It wouldn't be a Gabe & Luz party without seriously good eats. Our
+        cocktail hour and reception will feature an array of barbecue favorites,
+        hot off the grill. Just wait until you see the dessert spread Luz has
+        selected.
+        %br
+        %br
+        We'll cap off the night with a roaring bonfire. S'mores anyone?
+        %hr.size-1
+        We ask that cocktail attire be followed for the ceremony and reception,
+        but bring something comfortable if you plan on staying overnight.
+        %br
+        %br
+        We've arranged sleeping accommodations at the camp for everyone who
+        wants to stay. You'll have the choice of private cabins &mdash; perfect
+        for families &mdash; and bunk rooms which can sleep up to a dozen
+        people. For those who'd prefer to spread out, Camp Hoffman has plenty of
+        space to bring your own tent or camper.
+        %br
+        %br
+        If the rustic life isn't for you, there's a number of hotels and bed and
+        breakfasts in the area.
+
+        %ul
+          %li
+            %a{href: 'javascript:'} Jujubes Inn &amp; Suites Monroe
+          %li
+            %a{href: 'javascript:'} Cupcake Lodge Woodinville
+
+        More information to follow in the coming month.
+
+    .slide.event-info
+      .content-box
+        .map
+          %img{src: 'img/map.png'}
+        .details
+          .title.lato-bold EVENT INFO
+          .place
+            PLACE: Camp Hoffman
+            .lato-light
+              2850 Ministerial Rd
+              %br
+              South Kingston, RI 02879
+          %hr.size-3{style: 'margin: 16px 0 5px 0;'}
+          %hr.size-1{style: 'margin-bottom: 16px;'}
+          .time
+            TIME: 5PM Ceremony
+            .lato-light
+              Dinner & Dancing to Follow
+          %hr.size-1{style: 'margin: 16px 0 5px 0;'}
+          %hr.size-3{style: 'margin-bottom: 28px;'}
+          .buttons
+            %a.sq-button.info-button.js-open-event-info-modal{href:'javascript:'} MORE EVENT INFO
+            %a.sq-button.maps-button{href:'https://goo.gl/maps/kZmde', target:'_blank'} GOOGLE MAPS
+
+    %script{src:"js/jquery.min.js"}
+    %script{src:"js/underscore-min.js"}
+    %script{src:"js/gabeandluz.js"}
