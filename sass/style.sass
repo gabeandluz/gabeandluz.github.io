@@ -10,6 +10,12 @@ html, body
   height: 100%
   .none
     display: none
+  .left
+    float: left
+  .right
+    float: right
+  .clear
+    clear: both
   .lato-bold
     font-weight: 700
   .lato-regular
@@ -124,12 +130,10 @@ $footer-height: 59px
     max-width: 100%
     color: $white
     .map
-      float: left
       width: 48%
       img
         max-width: 100%
     .details
-      float: right
       width: 48%
       text-align: left
       .title
@@ -141,6 +145,13 @@ $footer-height: 59px
         .lato-light
           font-size: 16px
           color: #e5e2df
+
+    @media screen and (max-width: 500px)
+      .map, .details
+        float: none
+        width: 90%
+        margin: auto
+
     .sq-button
       font-size: 16px
       width: 49%
@@ -154,10 +165,6 @@ $footer-height: 59px
       padding: 16px 0
       &:hover
         color: #bebebe
-      &.maps-button
-        float: right
-      &.info-button
-        float: left
 
 .modal-background
   background-color: black

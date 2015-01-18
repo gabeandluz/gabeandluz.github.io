@@ -6,6 +6,12 @@ html, body {
   height: 100%; }
   html .none, body .none {
     display: none; }
+  html .left, body .left {
+    float: left; }
+  html .right, body .right {
+    float: right; }
+  html .clear, body .clear {
+    clear: both; }
   html .lato-bold, body .lato-bold {
     font-weight: 700; }
   html .lato-regular, body .lato-regular {
@@ -120,12 +126,10 @@ hr {
     max-width: 100%;
     color: #f9f6f2; }
     .event-info .content-box .map {
-      float: left;
       width: 48%; }
       .event-info .content-box .map img {
         max-width: 100%; }
     .event-info .content-box .details {
-      float: right;
       width: 48%;
       text-align: left; }
       .event-info .content-box .details .title {
@@ -137,6 +141,11 @@ hr {
         .event-info .content-box .details .place .lato-light, .event-info .content-box .details .time .lato-light {
           font-size: 16px;
           color: #e5e2df; }
+    @media screen and (max-width: 500px) {
+      .event-info .content-box .map, .event-info .content-box .details {
+        float: none;
+        width: 90%;
+        margin: auto; } }
     .event-info .content-box .sq-button {
       font-size: 16px;
       width: 49%;
@@ -150,10 +159,6 @@ hr {
       padding: 16px 0; }
       .event-info .content-box .sq-button:hover {
         color: #bebebe; }
-      .event-info .content-box .sq-button.maps-button {
-        float: right; }
-      .event-info .content-box .sq-button.info-button {
-        float: left; }
 
 .modal-background {
   background-color: black;
