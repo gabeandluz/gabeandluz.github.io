@@ -116,6 +116,8 @@ hr {
 .event-info {
   background-color: #aeaeb5; }
   .event-info .content-box {
+    width: 1000px;
+    max-width: 100%;
     color: #f9f6f2; }
     .event-info .content-box .map {
       float: left;
