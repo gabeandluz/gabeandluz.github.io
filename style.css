@@ -195,6 +195,9 @@ hr {
     overflow: scroll;
     padding: 40px;
     border: 1px #cfcfd3 solid; }
+    @media screen and (max-width: 500px) {
+      .modal .content-box {
+        padding: 15px; } }
     .modal .content-box hr {
       margin: 20px 0px; }
     .modal .content-box a {
