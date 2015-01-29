@@ -148,7 +148,9 @@ $footer-height: 59px
           color: #e5e2df
 
     @media screen and (max-width: 500px)
-      .map, .details
+      .map
+        display: none
+      .details
         float: none
         width: 90%
         margin: auto
@@ -180,7 +182,10 @@ $footer-height: 59px
 
 .modal
   z-index: 1000
-  width: 720px
+  width: 95%
+  max-width: 720px
+  height: 80%
+  overflow: scroll
   position: fixed
   left: 50%
   transform: translate(-50%, 0)
@@ -188,11 +193,12 @@ $footer-height: 59px
   background-color: $white
   padding: 12px
   .modal-close-button
-    position: fixed
+    position: absolute
     top: 0
     right: 0
     margin: 22px
   .content-box
+    overflow: scroll
     padding: 40px
     border: 1px #cfcfd3 solid
     hr

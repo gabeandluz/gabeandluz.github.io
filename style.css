@@ -143,7 +143,9 @@ hr {
           font-size: 16px;
           color: #e5e2df; }
     @media screen and (max-width: 500px) {
-      .event-info .content-box .map, .event-info .content-box .details {
+      .event-info .content-box .map {
+        display: none; }
+      .event-info .content-box .details {
         float: none;
         width: 90%;
         margin: auto; } }
@@ -174,7 +176,10 @@ hr {
 
 .modal {
   z-index: 1000;
-  width: 720px;
+  width: 95%;
+  max-width: 720px;
+  height: 80%;
+  overflow: scroll;
   position: fixed;
   left: 50%;
   transform: translate(-50%, 0);
@@ -182,11 +187,12 @@ hr {
   background-color: #f9f6f2;
   padding: 12px; }
   .modal .modal-close-button {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     margin: 22px; }
   .modal .content-box {
+    overflow: scroll;
     padding: 40px;
     border: 1px #cfcfd3 solid; }
     .modal .content-box hr {
