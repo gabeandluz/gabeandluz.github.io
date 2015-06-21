@@ -53,7 +53,7 @@ hr {
     width: 100%;
     list-style: none outside none; }
     .header ul.nav li {
-      width: 16%;
+      width: 32%;
       float: left;
       text-decoration: none;
       font-size: 16px;
@@ -109,6 +109,10 @@ hr {
   .slide .content-box {
     display: inline-block;
     vertical-align: middle; }
+  .slide .title {
+    font-size: 60px;
+    padding-bottom: 10px;
+    white-space: nowrap; }
 
 .home {
   background-color: #91afae; }
@@ -118,6 +122,32 @@ hr {
   .home .date img {
     max-width: 60%;
     max-height: 27.5%; }
+
+.day-of {
+  background-color: #91afae; }
+  .day-of .content-box {
+    width: 1000px;
+    max-width: 100%;
+    color: #f9f6f2; }
+    .day-of .content-box .menu {
+      width: 48%;
+      background-color: #aeaeb5;
+      border: 3px solid #f9f6f2;
+      padding-bottom: 30px;
+      padding-top: 30px; }
+      .day-of .content-box .menu .title {
+        font-size: 36px; }
+      .day-of .content-box .menu .menu-items {
+        font-size: 18px;
+        color: #e5e2df; }
+    .day-of .content-box .schedule {
+      width: 48%;
+      text-align: left; }
+      .day-of .content-box .schedule .schedule-items {
+        font-size: 18px;
+        color: #e5e2df; }
+    .day-of .content-box .subtitle {
+      font-size: 24px; }
 
 .event-info {
   background-color: #aeaeb5; }
@@ -132,10 +162,6 @@ hr {
     .event-info .content-box .details {
       width: 48%;
       text-align: left; }
-      .event-info .content-box .details .title {
-        font-size: 60px;
-        padding-bottom: 10px;
-        white-space: nowrap; }
       .event-info .content-box .details .place, .event-info .content-box .details .time {
         font-size: 20px;
         padding-bottom: 5px; }

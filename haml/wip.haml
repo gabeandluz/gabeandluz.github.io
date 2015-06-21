@@ -12,10 +12,7 @@
       %ul.nav
         %li{'data-scrollto' => '.home'} HOME
         %li{'data-scrollto' => '.event-info'} EVENT INFO
-        %li DAY OF
-        %li RSVP
-        %li OUR STORY
-        %li WEDDING PARTY
+        %li{'data-scrollto' => '.day-of'} SCHEDULE
     .footer
       %img.light{src: 'img/down-lt.png'}
       .next
@@ -96,6 +93,45 @@
           .buttons
             %a.sq-button.left.info-button.js-open-event-info-modal{href:'javascript:'} MORE INFO
             %a.sq-button.right.maps-button{href:'https://goo.gl/maps/kZmde', target:'_blank'} GOOGLE MAPS
+
+    .slide.day-of
+      .content-box
+        .menu.left
+          .title DINNER
+          .subtitle.lato-light MEATS
+          .menu-items.lato-light
+            Sliced Beef Brisket <br>
+            BBQ Chicken <br>
+            Pork Spare Ribs
+          %hr.size-1{style: 'width: 67%; margin: 25px auto'}
+          .subtitle.lato-light SIDES
+          .menu-items.lato-light
+            Grilled Vegetables <br>
+            Smoked Corn on the Cob <br>
+            Mac N' Cheese <br>
+            Rosemary Potato Salad
+        .schedule.right
+          .title SCHEDULE
+          .subtitle.lato-light SATURDAY
+          .schedule-items.lato-light
+            %span.lato-regular 3:00PM:
+            Welcome Reception <br>
+            %span.lato-regular 5:00PM:
+            Ceremony <br>
+            %span.lato-regular 6:00PM:
+            Cocktail Hour <br>
+            %span.lato-regular 7:00PM:
+            Dinner Reception <br>
+            %span.lato-regular 11:00PM:
+            Bonfire
+          %hr.size-3{style: 'margin: 16px 0 5px 0;'}
+          %hr.size-1{style: 'margin-bottom: 16px;'}
+          .subtitle.lato-light SUNDAY
+          .schedule-items.lato-light
+            %span.lato-regular 8:00AM:
+            Breakfast <br>
+            %span.lato-regular 12:00PM:
+            Checkout
 
     %script{src:"js/jquery.min.js"}
     %script{src:"js/underscore-min.js"}

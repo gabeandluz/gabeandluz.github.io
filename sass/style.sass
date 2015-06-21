@@ -1,6 +1,7 @@
 $dusty-shale: rgb(145, 175, 174) // #91AFAE
 $soft-grey: rgb(174, 174, 181)   // #AEAEB5
 $white: rgb(249, 246, 242)       // #F9F6F2
+$beige: rgb(229, 226, 223)       // #E5E2DF
 
 html, body
   font-family: 'Lato', sans-serif
@@ -56,7 +57,7 @@ hr
     width: 100%
     list-style: none outside none
     li
-      width: 16%
+      width: 32%
       float: left
       text-decoration: none
       font-size: 16px
@@ -113,6 +114,10 @@ $footer-height: 59px
   .content-box
     display: inline-block
     vertical-align: middle
+  .title
+    font-size: 60px
+    padding-bottom: 10px
+    white-space: nowrap
 
 .home
   background-color: $dusty-shale
@@ -122,6 +127,32 @@ $footer-height: 59px
   .date img
     max-width: 60%
     max-height: 27.5%
+
+.day-of
+  background-color: $dusty-shale
+  .content-box
+    width: 1000px
+    max-width: 100%
+    color: $white
+    .menu
+      width: 48%
+      background-color: $soft-grey
+      border: 3px solid $white
+      padding-bottom: 30px
+      padding-top: 30px
+      .title
+        font-size: 36px
+      .menu-items
+        font-size: 18px
+        color: $beige
+    .schedule
+      width: 48%
+      text-align: left
+      .schedule-items
+        font-size: 18px
+        color: $beige
+    .subtitle
+      font-size: 24px
 
 .event-info
   background-color: $soft-grey
@@ -136,16 +167,12 @@ $footer-height: 59px
     .details
       width: 48%
       text-align: left
-      .title
-        font-size: 60px
-        padding-bottom: 10px
-        white-space: nowrap
       .place, .time
         font-size: 20px
         padding-bottom: 5px
         .lato-light
           font-size: 16px
-          color: #e5e2df
+          color: $beige
 
     @media screen and (max-width: 500px)
       .map
