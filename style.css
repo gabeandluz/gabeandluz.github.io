@@ -36,7 +36,14 @@ hr {
 
 @media screen and (max-width: 500px) {
   .header, .footer {
-    display: none; } }
+    display: none; }
+
+  .day-of {
+    height: auto !important; }
+    .day-of .menu, .day-of .schedule {
+      float: none;
+      margin: 25px auto;
+      width: 90% !important; } }
 .header {
   position: fixed;
   top: 0;
