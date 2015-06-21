@@ -2,6 +2,7 @@
 %html
   %head
     %title Gabe & Luz
+    %meta{name:'viewport', content:'width=device-width, initial-scale=1.0'}
     %link{href:'img/favicon.png', rel:'shortcut icon', type:'image/x-icon'}
     %link{href:'http://fonts.googleapis.com/css?family=Lato:300,400,700', rel:'stylesheet', type:'text/css'}
     %link{href:'style.css', rel:'stylesheet', type:'text/css'}
@@ -38,7 +39,7 @@
         maple tree. Afterwards we'll party it up in their rustic dining hall.
         %br
         %br
-        It wouldn't be a Gabe & Luz party without seriously good eats. Our
+        It wouldn't be a Gabe &amp; Luz party without seriously good eats. Our
         cocktail hour and reception will feature an array of barbecue favorites,
         hot off the grill. Just wait until you see the dessert spread Luz has
         selected.
@@ -62,17 +63,21 @@
 
         %ul
           %li
-            %a{href: 'javascript:'} Jujubes Inn &amp; Suites Monroe
+            %a{href: 'http://virtualcities.com/ons/ri/w/riw5901.htm', target: '_blank'} Sugar Loaf Hill B &amp; B
           %li
-            %a{href: 'javascript:'} Cupcake Lodge Woodinville
-
-        More information to follow in the coming month.
+            %a{href: 'http://www.meyerhouseri.com/', target: '_blank'} Meyer House Bed & Breakfast
+          %li
+            %a{href: 'http://www.admiraldeweyinn.com/rooms.html', target: '_blank'} Admiral Dewey Inn
+          %li
+            %a{href: 'http://www.lilyslittlerest.com/', target: '_blank'} Lily's at Little Rest
+          %li
+            %a{href: 'http://www.ihg.com/holidayinn/hotels/us/en/saunderstown/sknri/hoteldetail', target: '_blank'} Holiday Inn South Kingstown
 
     .slide.event-info
       .content-box
-        .map
+        .map.left
           %img{src: 'img/map.png'}
-        .details
+        .details.right
           .title.lato-bold EVENT INFO
           .place
             PLACE: Camp Hoffman
@@ -89,8 +94,8 @@
           %hr.size-1{style: 'margin: 16px 0 5px 0;'}
           %hr.size-3{style: 'margin-bottom: 28px;'}
           .buttons
-            %a.sq-button.info-button.js-open-event-info-modal{href:'javascript:'} MORE EVENT INFO
-            %a.sq-button.maps-button{href:'https://goo.gl/maps/kZmde', target:'_blank'} GOOGLE MAPS
+            %a.sq-button.left.info-button.js-open-event-info-modal{href:'javascript:'} MORE INFO
+            %a.sq-button.right.maps-button{href:'https://goo.gl/maps/kZmde', target:'_blank'} GOOGLE MAPS
 
     %script{src:"js/jquery.min.js"}
     %script{src:"js/underscore-min.js"}
